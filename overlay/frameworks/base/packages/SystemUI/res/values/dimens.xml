@@ -32,4 +32,6 @@
     <dimen name="status_bar_content_number_size">48.0sp</dimen>
     <dimen name="system_bar_height">48.0dip</dimen>
     <dimen name="status_bar_height_portrait">24.0dip</dimen>
+    <!-- the padding on the start and the end of the statusbar -->
+    <dimen name="status_bar_extra_padding">12dp</dimen>
 </resources>
