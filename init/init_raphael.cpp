@@ -100,6 +100,7 @@ void vendor_load_properties() {
     property_override("ro.control_privapp_permissions", "log");
     property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
     property_override("ro.vendor.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+    property_override("ro.oem_unlock_supported", "0");
 
     load_dalvikvm_properties();
 
