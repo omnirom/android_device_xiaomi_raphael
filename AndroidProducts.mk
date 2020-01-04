@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_raphael.mk
+    $(LOCAL_DIR)/omni_raphael.mk
+
+COMMON_LUNCH_CHOICES := \
+    omni_raphael-user \
+    omni_raphael-userdebug \
+    omni_raphael-eng
