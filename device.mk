@@ -58,8 +58,10 @@ PRODUCT_PACKAGES += \
     libvulkan
 
 # Fingerprint
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/android.hardware.fod.xml:system/etc/permissions/android.hardware.fod.xml
 PRODUCT_PACKAGES += \
-    lineage.biometrics.fingerprint.inscreen@1.0-service.raphael
+    omni.biometrics.fingerprint.inscreen@1.0-service.raphael
 
 # FM
 PRODUCT_PACKAGES += \
