@@ -44,7 +44,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    SnapdragonCamera2
 
 # Display
 PRODUCT_PACKAGES += \
