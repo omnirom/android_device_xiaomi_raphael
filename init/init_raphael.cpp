@@ -21,6 +21,9 @@
 
 #include "property_service.h"
 
+namespace android {
+namespace init {
+
 using android::init::property_set;
 
 void property_override(char const prop[], char const value[])
@@ -75,3 +78,6 @@ void vendor_load_properties() {
     property_override("persist.bluetooth.a2dp_offload.disabled", "true");
     property_override("persist.bluetooth.bluetooth_audio_hal.disabled", "true");
 }
+
+}  // namespace init
+}  // namespace android
