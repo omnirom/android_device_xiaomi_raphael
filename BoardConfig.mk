@@ -50,6 +50,7 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
   TARGET_KERNEL_CONFIG := raphael_defconfig
   TARGET_KERNEL_CLANG_COMPILE := true
   TARGET_KERNEL_SOURCE := kernel/xiaomi/raphael
+  TARGET_COMPILE_WITH_MSM_KERNEL := true
 endif
 
 # Platform
