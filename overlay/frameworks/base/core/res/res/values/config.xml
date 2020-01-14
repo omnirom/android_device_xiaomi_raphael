@@ -939,7 +939,7 @@
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
 
-    <!-- Shows the required view for in-display fingerprint -->
-    <bool name="config_supportsInDisplayFingerprint">true</bool>
+    <!-- Show a custom view for FOD -->
+    <bool name="config_usesFOD">true</bool>
 
 </resources>
