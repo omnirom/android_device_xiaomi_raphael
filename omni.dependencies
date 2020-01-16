@@ -12,9 +12,9 @@
     "revision": "android-10"
   },
   {
-    "remote": "omnirom",
-    "repository": "android_vendor_qcom_opensource_fm-commonsys",
+    "remote": "github",
+    "repository": "raphael-development/android_vendor_qcom_opensource_fm-commonsys",
     "target_path": "vendor/qcom/opensource/fm-commonsys",
-    "revision": "android-10"
+    "revision": "lineage-17.1"
   }
 ]
