@@ -840,4 +840,8 @@
     <!-- Show a custom view for FOD -->
     <bool name="config_usesFOD">true</bool>
 
+    <!-- True if the display hardware only has brightness buckets rather than a full range of
+         backlight values -->
+    <bool name="config_displayBrightnessBucketsInDoze">true</bool>
+
 </resources>
