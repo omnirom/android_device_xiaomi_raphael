@@ -138,10 +138,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
-
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
