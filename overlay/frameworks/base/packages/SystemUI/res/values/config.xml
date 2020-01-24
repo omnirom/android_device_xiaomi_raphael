@@ -55,4 +55,7 @@
     <!-- Doze: does this device support STATE_DOZE  -->
     <bool name="doze_display_state_supported">true</bool>
 
+    <!-- Whether to use fingerprint pressed image -->
+    <bool name="config_fodPressedImage">true</bool>
+
 </resources>
