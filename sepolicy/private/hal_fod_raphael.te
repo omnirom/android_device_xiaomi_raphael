@@ -3,3 +3,28 @@ hal_server_domain(hal_fod_raphael, hal_omni_fod)
 
 type hal_fod_raphael_exec, exec_type, system_file_type, file_type;
 init_daemon_domain(hal_fod_raphael)
+
+# Allow access to the HALs
+hal_client_domain(hal_fod_raphael, hal_fingerprint)
+
+# Allow binder communication with hal_displayfearure_default
+binder_call(hal_fod_raphael, hal_displayfeature_xiaomi_default)
+
+# Allow binder communication with hal_fingerprint
+binder_call(hal_fod_raphael, hal_fingerprint)
+
+#allow hal_fod_raphael hal_displaycolor_xiaomi_hwservice:hwservice_manager find;
+#allow hal_fod_raphael hal_display_color_hwservice:hwservice_manager find;
+
+#Allow hal_fod_raphael to hal_displayfeature_xiaomi_hwservice
+allow hal_fod_raphael hal_displayfeature_xiaomi_hwservice:hwservice_manager find;
+
+# Allow hal_fod_raphael to hal_fingerprint_hwservice_xiaomi
+allow hal_fod_raphael hal_fingerprint_hwservice_xiaomi:hwservice_manager find;
+
+allow hal_fod_raphael sysfs_graphics:dir search;
+allow hal_fod_raphael sysfs_graphics:file {getattr open read};
+allow hal_fod_raphael sysfs_tp_fodstatus:file { getattr open write };
+allow hal_fod_raphael sysfs:file {getattr};
+
+allow hal_fod_raphael omni_sysfs_drm:file rw_file_perms;

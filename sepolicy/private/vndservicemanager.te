@@ -1,0 +1,1 @@
+allow vndservicemanager hal_displayfeature_xiaomi_default:binder transfer;
