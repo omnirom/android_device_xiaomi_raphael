@@ -1,0 +1,2 @@
+#get camera using info
+vendor.sys.camerainfo         u:object_r:system_prop:s0

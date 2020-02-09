@@ -13,8 +13,8 @@ type sysfs_tp_fodstatus, sysfs_type, fs_type;
 
 type vendor_pd_locater_dbg_prop, property_type;
 
-# kgsl file type for sysfs access
-type sysfs_kgsl, sysfs_type, fs_type;
-
 # kgsl gpu model file type for sysfs access
 type sysfs_kgsl_gpu_model, sysfs_type, fs_type;
+
+type motor_device, dev_type;
+type hall_device, dev_type;

@@ -113,7 +113,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_raphael
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 TARGET_RECOVERY_DEVICE_MODULES := libinit_raphael
 
-# Netd	
+# Netd
 TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
 
 # Partitions
@@ -157,6 +157,7 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     device/qcom/sepolicy/qva/private
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
+    $(DEVICE_PATH)/sepolicy/public \
     device/qcom/sepolicy/generic/public \
     device/qcom/sepolicy/qva/public
 

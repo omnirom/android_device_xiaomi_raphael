@@ -1,0 +1,8 @@
+type hal_gnss_qti, domain;
+hal_server_domain(hal_gnss_qti, hal_gnss)
+
+userdebug_or_eng(`
+  get_prop(hal_gnss_qti, vendor_pd_locater_dbg_prop)
+')
+
+allow hal_gnss self:qipcrtr_socket create_socket_perms_no_ioctl;
