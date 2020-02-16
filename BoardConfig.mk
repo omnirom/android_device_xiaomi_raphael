@@ -171,8 +171,7 @@ TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
 
 # Treble
 BOARD_VNDK_VERSION := current
-PRODUCT_FULL_TEBLE := false
-
+PRODUCT_FULL_TREBLE := false
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
