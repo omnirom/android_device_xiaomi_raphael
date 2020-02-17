@@ -37,6 +37,7 @@ void property_override(char const prop[], char const value[])
     else
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
+
 void load_raphaelglobal() {
     property_override("ro.product.model", "Mi 9T Pro");
     property_override("ro.build.product", "raphael");
@@ -44,7 +45,7 @@ void load_raphaelglobal() {
     property_override("ro.build.description", "raphael_eea-user 10 QKQ1.190825.002 V11.0.4.0.QFKEUXM release-keys");
     property_override("ro.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
     property_override("ro.vendor.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
-
+    property_override("ro.build.version.security_patch","2019-12-01");
 }
 
 void load_raphaelin() {
@@ -54,6 +55,7 @@ void load_raphaelin() {
     property_override("ro.build.description", "raphaelin-user 10 QKQ1.190825.002 V11.0.4.0.QFKINXM release-keys");
     property_override("ro.build.fingerprint", "Xiaomi/raphaelin/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKINXM:user/release-keys");
     property_override("ro.vendor.build.fingerprint", "Xiaomi/raphaelin/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKINXM:user/release-keys");
+    property_override("ro.build.version.security_patch","2019-11-01");
 }
 
 void load_raphael() {
@@ -63,6 +65,7 @@ void load_raphael() {
     property_override("ro.build.description", "raphael-user 10 QKQ1.190825.002 V11.0.5.0.QFKCNXM release-keys");
     property_override("ro.build.fingerprint", "Xiaomi/raphael/raphael:10/QKQ1.190825.002/V11.0.5.0.QFKCNXM:user/release-keys");
     property_override("ro.vendor.build.fingerprint", "Xiaomi/raphael/raphael:10/QKQ1.190825.002/V11.0.5.0.QFKCNXM:user/release-keys");
+    property_override("ro.build.version.security_patch","2019-11-01");
 }
 
 
