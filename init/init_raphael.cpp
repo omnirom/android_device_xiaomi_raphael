@@ -45,7 +45,7 @@ void load_raphaelglobal() {
     property_override("ro.build.description", "raphael_eea-user 10 QKQ1.190825.002 V11.0.4.0.QFKEUXM release-keys");
     property_override("ro.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
     property_override("ro.vendor.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
-    property_override("ro.build.version.security_patch","2019-12-01");
+//    property_override("ro.build.version.security_patch","2019-12-01");
 }
 
 void load_raphaelin() {
