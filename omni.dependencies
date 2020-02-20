@@ -1,6 +1,12 @@
 [
   {
     "remote": "omnirom",
+    "repository": "android_kernel_xiaomi_raphael",
+    "target_path": "kernel/xiaomi/raphael",
+    "revision": "android-10"
+  },
+  {
+    "remote": "omnirom",
     "repository": "android_packages_apps_SnapdragonCamera2",
     "target_path": "packages/apps/SnapdragonCamera2",
     "revision": "android-10"
