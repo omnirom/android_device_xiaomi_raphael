@@ -52,9 +52,9 @@ void load_raphaelin() {
     property_override("ro.product.model", "Redmi K20 Pro");
     property_override("ro.build.product", "raphaelin");
     property_override("ro.product.device", "raphaelin");
-    property_override("ro.build.description", "raphaelin-user 10 QKQ1.190825.002 V11.0.4.0.QFKINXM release-keys");
-    property_override("ro.build.fingerprint", "Xiaomi/raphaelin/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKINXM:user/release-keys");
-    property_override("ro.vendor.build.fingerprint", "Xiaomi/raphaelin/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKINXM:user/release-keys");
+    property_override("ro.build.description", "raphaelin-user 10 QKQ1.190825.002 V11.0.3.0.QFKINXM release-keys");
+    property_override("ro.build.fingerprint", "Xiaomi/raphaelin/raphael:10/QKQ1.190825.002/V11.0.3.0.QFKINXM:user/release-keys");
+    property_override("ro.vendor.build.fingerprint", "Xiaomi/raphaelin/raphael:10/QKQ1.190825.002/V11.0.3.0.QFKINXM:user/release-keys");
     property_override("ro.build.version.security_patch","2019-11-01");
 }
 
