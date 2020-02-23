@@ -45,27 +45,24 @@ void load_raphaelglobal() {
     property_override("ro.build.description", "raphael_eea-user 10 QKQ1.190825.002 V11.0.4.0.QFKEUXM release-keys");
     property_override("ro.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
     property_override("ro.vendor.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
-    property_override("ro.build.version.security_patch","2019-12-01");
 }
 
 void load_raphaelin() {
     property_override("ro.product.model", "Redmi K20 Pro");
-    property_override("ro.build.product", "raphaelin");
-    property_override("ro.product.device", "raphaelin");
-    property_override("ro.build.description", "raphaelin-user 10 QKQ1.190825.002 V11.0.3.0.QFKINXM release-keys");
-    property_override("ro.build.fingerprint", "Xiaomi/raphaelin/raphael:10/QKQ1.190825.002/V11.0.3.0.QFKINXM:user/release-keys");
-    property_override("ro.vendor.build.fingerprint", "Xiaomi/raphaelin/raphael:10/QKQ1.190825.002/V11.0.3.0.QFKINXM:user/release-keys");
-    property_override("ro.build.version.security_patch","2019-11-01");
+    property_override("ro.build.product", "raphael");
+    property_override("ro.product.device", "raphael");
+    property_override("ro.build.description", "raphael_eea-user 10 QKQ1.190825.002 V11.0.4.0.QFKEUXM release-keys");
+    property_override("ro.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
+    property_override("ro.vendor.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
 }
 
 void load_raphael() {
     property_override("ro.product.model", "Redmi K20 Pro");
     property_override("ro.build.product", "raphael");
     property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "raphael-user 10 QKQ1.190825.002 V11.0.5.0.QFKCNXM release-keys");
-    property_override("ro.build.fingerprint", "Xiaomi/raphael/raphael:10/QKQ1.190825.002/V11.0.5.0.QFKCNXM:user/release-keys");
-    property_override("ro.vendor.build.fingerprint", "Xiaomi/raphael/raphael:10/QKQ1.190825.002/V11.0.5.0.QFKCNXM:user/release-keys");
-    property_override("ro.build.version.security_patch","2019-11-01");
+    property_override("ro.build.description", "raphael_eea-user 10 QKQ1.190825.002 V11.0.4.0.QFKEUXM release-keys");
+    property_override("ro.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
+    property_override("ro.vendor.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
 }
 
 
