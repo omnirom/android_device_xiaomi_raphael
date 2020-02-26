@@ -3,3 +3,7 @@ allow system_app sysfs_kgsl:file getattr;
 
 allow system_app hal_motor_default:binder transfer;
 allow system_app hal_motor_default:binder call;
+
+allow system_app logpersistd_logging_prop:file { read open getattr map };
+allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:file { read open getattr };
