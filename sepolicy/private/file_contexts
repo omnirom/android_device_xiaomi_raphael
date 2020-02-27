@@ -10,6 +10,8 @@
 /dev/drv8846_dev                    u:object_r:motor_device:s0
 /dev/akm09970                       u:object_r:hall_device:s0
 
+/dev/diag                           u:object_r:diag_device:s0
+
 # HALs
 /(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware.power@1\.2-service     u:object_r:hal_power_default_exec:s0
 /system/bin/hw/omni\.biometrics\.fingerprint\.inscreen@1.0-service\.raphael                     u:object_r:hal_fod_raphael_exec:s0

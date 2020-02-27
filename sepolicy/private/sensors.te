@@ -1,0 +1,2 @@
+type sensors, domain;
+allow sensors persist_file:lnk_file read;

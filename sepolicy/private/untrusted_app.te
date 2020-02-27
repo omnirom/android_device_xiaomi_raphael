@@ -1,4 +1,4 @@
-allow untrusted_app persist_camera_prop:file { open read getattr };
+allow untrusted_app persist_camera_prop:file { open read getattr map };
 allow untrusted_app sysfs_android_usb:dir search;
 allow untrusted_app sysfs_kgsl:dir search;
-allow untrusted_app sysfs_kgsl:file read;
+allow untrusted_app sysfs_kgsl:file { getattr open read };
