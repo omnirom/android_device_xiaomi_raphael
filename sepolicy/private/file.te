@@ -18,3 +18,5 @@ type sysfs_kgsl_gpu_model, sysfs_type, fs_type;
 
 type motor_device, dev_type;
 type hall_device, dev_type;
+
+type diag_device, dev_type, mlstrustedobject;

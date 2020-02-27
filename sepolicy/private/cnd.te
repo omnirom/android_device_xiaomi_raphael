@@ -1,0 +1,2 @@
+type cnd, domain, mlstrustedobject;
+allow cnd diag_device:chr_file { read write };
