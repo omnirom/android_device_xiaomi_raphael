@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.omnirom.device;
+package org.omnirom.xiaomiparts;
 
 import android.app.AlertDialog;
 import android.app.Service;
@@ -46,7 +46,7 @@ import android.widget.Button;
 
 import java.util.List;
 
-import org.omnirom.device.R;
+import org.omnirom.xiaomiparts.R;
 
 import vendor.xiaomi.hardware.motor.V1_0.IMotor;
 import vendor.xiaomi.hardware.motor.V1_0.IMotorCallback;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.omnirom.device;
+package org.omnirom.xiaomiparts;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -22,21 +22,38 @@ import android.view.MenuItem;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
+import androidx.preference.SwitchPreference;
 
-import org.omnirom.device.R;
+import org.omnirom.xiaomiparts.R;
 
-public class PopupCameraSettingsFragment extends PreferenceFragment implements
+import vendor.xiaomi.hardware.displayfeature.V1_0.IDisplayFeature;
+
+public class DcDimmingSettingsFragment extends PreferenceFragment implements
         OnPreferenceChangeListener {
+
+    private SwitchPreference mDcDimmingPreference;
+    private static final String DC_DIMMING_ENABLE_KEY = "dc_dimming_enable";
+    private IDisplayFeature mDisplayFeature;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        addPreferencesFromResource(R.xml.popup_settings);
+        addPreferencesFromResource(R.xml.dcdimming_settings);
         getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
+        try {
+            mDisplayFeature = IDisplayFeature.getService();
+        } catch(Exception e) {
+        }
+        mDcDimmingPreference = (SwitchPreference) findPreference(DC_DIMMING_ENABLE_KEY);
+        mDcDimmingPreference.setEnabled(true);
+        mDcDimmingPreference.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        return false;
+        if (DC_DIMMING_ENABLE_KEY.equals(preference.getKey())) {
+            enableDcDimming((Boolean) newValue ? 1 : 0);
+        }
+        return true;
     }
 
     @Override
@@ -46,5 +63,13 @@ public class PopupCameraSettingsFragment extends PreferenceFragment implements
             return true;
         }
         return false;
+    }
+
+    private void enableDcDimming(int enable) {
+        if (mDisplayFeature == null) return;
+        try {
+            mDisplayFeature.setFeature(0, 20, enable, 255);
+        } catch(Exception e) {
+        }
     }
 }

@@ -15,20 +15,19 @@
  * limitations under the License.
  */
 
-package org.omnirom.device;
+package org.omnirom.xiaomiparts;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
-public class DozeSettingsActivity extends PreferenceActivity {
+public class DcDimmingSettingsActivity extends PreferenceActivity {
 
-    private static final String TAG_DOZE = "doze";
+    private static final String TAG_DCDIMMING = "dcdimming";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         getFragmentManager().beginTransaction().replace(android.R.id.content,
-                new DozeSettingsFragment(), TAG_DOZE).commit();
+                new DcDimmingSettingsFragment(), TAG_DCDIMMING).commit();
     }
 }

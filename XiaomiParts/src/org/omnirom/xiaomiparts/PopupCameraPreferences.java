@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.omnirom.device;
+package org.omnirom.xiaomiparts;
 
 import android.content.Context;
 import android.content.SharedPreferences;
