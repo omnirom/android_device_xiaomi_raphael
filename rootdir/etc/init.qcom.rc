@@ -1,3 +1,6 @@
+on init
+    mount none /system/overlay/EmptyOverlay/EmptyOverlay.apk /vendor/overlay/CarrierConfigResCommon.apk bind
+
 on boot
     write /sys/class/thermal/thermal_message/sconfig 10
 

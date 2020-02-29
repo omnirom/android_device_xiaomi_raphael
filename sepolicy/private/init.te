@@ -6,3 +6,6 @@ allow init vendor_configs_file:dir mounton;
 
 allow init bt_firmware_file:filesystem getattr;
 allow init firmware_file:filesystem getattr;
+
+allow init vendor_overlay_file:file mounton;
+allow init vendor_overlay_file:dir mounton;
