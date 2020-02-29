@@ -25,7 +25,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # CarrierConfig
-PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
+DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
