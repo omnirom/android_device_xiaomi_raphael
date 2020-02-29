@@ -1,3 +1,11 @@
+on init
+    mount none /system/overlay/EmptyOverlay/EmptyOverlay.apk /vendor/overlay/FrameworksResCommon.apk bind
+    mount none /system/overlay/EmptyOverlay/EmptyOverlay.apk /vendor/overlay/FrameworksResTarget.apk bind
+    mount none /system/overlay/EmptyOverlay/EmptyOverlay.apk /vendor/overlay/SystemUIResCommon.apk bind
+    mount none /system/overlay/EmptyOverlay/EmptyOverlay.apk /vendor/overlay/TelecommResCommon.apk bind
+    mount none /system/overlay/EmptyOverlay/EmptyOverlay.apk /vendor/overlay/TelephonyResCommon.apk bind
+    mount none /system/overlay/EmptyOverlay/EmptyOverlay.apk /vendor/overlay/CellBroadcastReceiverResCommon.apk bind
+
 on boot
     write /sys/class/thermal/thermal_message/sconfig 10
 
