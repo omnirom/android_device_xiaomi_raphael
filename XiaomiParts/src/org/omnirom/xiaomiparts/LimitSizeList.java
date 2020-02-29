@@ -1,4 +1,4 @@
-package org.omnirom.device;
+package org.omnirom.xiaomiparts;
 
 import java.util.LinkedList;
 
