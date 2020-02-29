@@ -25,9 +25,6 @@ PRODUCT_TARGET_VNDK_VERSION := 29
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
