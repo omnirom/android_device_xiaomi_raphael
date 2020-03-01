@@ -20,3 +20,5 @@ type motor_device, dev_type;
 type hall_device, dev_type;
 
 type diag_device, dev_type, mlstrustedobject;
+
+type vendor_lib_file, file_type, vendor_file_type;
