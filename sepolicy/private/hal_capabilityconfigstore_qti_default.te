@@ -1,5 +1,7 @@
 type hal_capabilityconfigstore_qti_default, domain, coredomain;
+type hal_capabilityconfigstore_qti_default_exec, exec_type, vendor_file_type, file_type;
 
-allow hal_capabilityconfigstore_qti_default vendor_cap_configstore_dbg_prop:file read;
-allow hal_capabilityconfigstore_qti_default vendor_file:dir read;
-#allow hal_capabilityconfigstore_qti_default vendor_file:file read;
+allow hal_capabilityconfigstore_qti_default vendor_cap_configstore_dbg_prop:file { read open };
+allow hal_capabilityconfigstore_qti_default vendor_file:dir r_dir_perms;
+allow hal_capabilityconfigstore_qti_default vendor_public_lib_file:file { read open getattr map };
+#allow hal_capabilityconfigstore_qti_default vendor_lib_file:file { read open getattr map };
