@@ -14,6 +14,14 @@
 
 # HALs
 /(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware.power@1\.2-service     u:object_r:hal_power_default_exec:s0
+#/(product|system/product)/vendor_overlay/[0-9]+/bin/hw/vendor\.xiaomi\.hardware\.citsensorservice@1\.1-service		u:object_r:hal_citsensorservice_xiaomi_default_exec:s0
+#/(product|system/product)/vendor_overlay/[0-9]+/bin/hw/vendor\.qti\.hardware\.capabilityconfigstore@1\.0-service	u:object_r:hal_capabilityconfigstore_qti_exec:s0
+
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.citsensorservice@1\.1-service		    u:object_r:hal_citsensorservice_xiaomi_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.capabilityconfigstore@1\.0-service		u:object_r:hal_capabilityconfigstore_qti_default_exec:s0
+/vendor/lib(64)?/libssccalapi\.so                                                               u:object_r:vendor_public_lib_file:s0
+/vendor/lib(64)?/vendor\.qti\.hardware\.capabilityconfigstore@1\.0\.so                          u:object_r:vendor_public_lib_file:s0
+
 /system/bin/hw/omni\.biometrics\.fingerprint\.inscreen@1.0-service\.raphael                     u:object_r:hal_fod_raphael_exec:s0
 
 /sys/devices/virtual/touch/tp_dev/fod_status                                                    u:object_r:sysfs_tp_fodstatus:s0
@@ -22,5 +30,8 @@
 
 # Vendor overlay
 /(product|system/product)/vendor_overlay/[0-9]+/etc(/.*)?                                       u:object_r:vendor_configs_file:s0
+#/(product|system/product)/vendor_overlay/[0-9]+/lib(/.*)?                                       u:object_r:vendor_public_lib_file:s0
+#/(product|system/product)/vendor_overlay/[0-9]+/lib64(/.*)?                                     u:object_r:vendor_public_lib_file:s0
+
 
 /sys/devices(/platform)?/soc/[a-f0-9]+.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpu_model                    u:object_r:sysfs_kgsl_gpu_model:s0
