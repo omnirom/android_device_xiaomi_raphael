@@ -1,5 +1,6 @@
 type hal_citsensorservice_xiaomi_default, domain, coredomain;
 
-allow hal_citsensorservice_xiaomi_default sensors_prop:file open;
-allow hal_citsensorservice_xiaomi_default vendor_file:dir read;
-#allow hal_citsensorservice_xiaomi_default vendor_file:file read;
+allow hal_citsensorservice_xiaomi_default sensors_prop:file { read open };
+allow hal_citsensorservice_xiaomi_default vendor_file:dir r_dir_perms;
+allow hal_citsensorservice_xiaomi_default vendor_public_lib_file:file { read open getattr map };
+#allow hal_citsensorservice_xiaomi_default vendor_lib_file:file { read open getattr map };
