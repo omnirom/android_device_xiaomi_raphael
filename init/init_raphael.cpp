@@ -40,29 +40,14 @@ void property_override(char const prop[], char const value[])
 
 void load_raphaelglobal() {
     property_override("ro.product.model", "Mi 9T Pro");
-    property_override("ro.build.product", "raphael");
-    property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "raphael_eea-user 10 QKQ1.190825.002 V11.0.4.0.QFKEUXM release-keys");
-    property_override("ro.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
-    property_override("ro.vendor.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
 }
 
 void load_raphaelin() {
     property_override("ro.product.model", "Redmi K20 Pro");
-    property_override("ro.build.product", "raphael");
-    property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "raphael_eea-user 10 QKQ1.190825.002 V11.0.4.0.QFKEUXM release-keys");
-    property_override("ro.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
-    property_override("ro.vendor.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
 }
 
 void load_raphael() {
     property_override("ro.product.model", "Redmi K20 Pro");
-    property_override("ro.build.product", "raphael");
-    property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "raphael_eea-user 10 QKQ1.190825.002 V11.0.4.0.QFKEUXM release-keys");
-    property_override("ro.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
-    property_override("ro.vendor.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.4.0.QFKEUXM:user/release-keys");
 }
 
 
@@ -91,6 +76,16 @@ void load_dalvikvm_properties()
 void vendor_load_properties() {
     std::string region = android::base::GetProperty("ro.boot.hwc", "");
 
+    property_override("ro.build.product", "raphael");
+    property_override("ro.product.device", "raphael");
+    property_override("ro.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.5.0.QFKEUXM:user/release-keys");
+    property_override("ro.system.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.5.0.QFKEUXM:user/release-keys");
+    property_override("ro.bootimage.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.5.0.QFKEUXM:user/release-keys");
+    property_override("ro.product.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.5.0.QFKEUXM:user/release-keys");
+    property_override("ro.vendor.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.5.0.QFKEUXM:user/release-keys");
+    property_override("ro.odm.build.fingerprint", "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V11.0.5.0.QFKEUXM:user/release-keys");
+    property_override("ro.build.description", "raphael_eea-user 10 QKQ1.190825.002 V11.0.5.0.QFKEUXM release-keys");
+
     if (region.find("CN") != std::string::npos) {
         load_raphael();
     } else if (region.find("INDIA") != std::string::npos) {
@@ -101,7 +96,6 @@ void vendor_load_properties() {
         LOG(ERROR) << __func__ << ": unexcepted region!";
     }
 
-    property_override("ro.control_privapp_permissions", "enforce");
     property_override("ro.oem_unlock_supported", "0");
 
     load_dalvikvm_properties();
