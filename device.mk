@@ -10,9 +10,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 OMNI_PRODUCT_PROPERTIES += \
     ro.apex.updatable=true
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
-
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Get non-open-source specific aspects

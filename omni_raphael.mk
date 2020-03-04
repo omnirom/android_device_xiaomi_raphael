@@ -35,6 +35,8 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 # Inherit aosp mainline system configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/mainline_system_arm64.mk)
 
+PRODUCT_SHIPPING_API_LEVEL := 28
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := raphael
