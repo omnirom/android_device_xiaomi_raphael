@@ -12,6 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+VENDOR_EXCEPTION_PATHS += omni \
+    xiaomi
+
+VENDOR_EXCEPTION_MODULES += FM2 \
+    qcom.fmradio \
+    libqcomfm_jni \
+    libqcomfm_jni_32
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
