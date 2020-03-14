@@ -10,6 +10,13 @@ service citsensor-hal-1-1  /vendor/bin/hw/vendor.xiaomi.hardware.citsensorservic
     user system
     group system input wakelock
 
+service vendor.capabilityconfigstore /vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
+    override
+    class hal
+    user system
+    group system
+    disabled
+
 service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
     override
     class main
