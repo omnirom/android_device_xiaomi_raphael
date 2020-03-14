@@ -229,3 +229,7 @@ lib/libwfduibcsrcinterface.so
 -priv-app/WfdService/WfdService.apk
 product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 product/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+
+# citsensorservice
+/system/lib/vendor.xiaomi.hardware.citsensorservice@1.0.so
+/system/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
