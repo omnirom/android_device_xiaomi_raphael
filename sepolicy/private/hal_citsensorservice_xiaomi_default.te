@@ -1,0 +1,3 @@
+type hal_citsensorservice_xiaomi_default, domain, coredomain;
+
+allow hal_citsensorservice_xiaomi_default ion_device:chr_file { ioctl read getattr lock map open };
