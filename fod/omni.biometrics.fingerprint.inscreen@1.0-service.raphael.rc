@@ -2,6 +2,6 @@ service fingerprint-inscreen-1-0 /system/bin/hw/omni.biometrics.fingerprint.insc
     interface vendor.omni.biometrics.fingerprint.inscreen@1.0::IFingerprintInscreen default
     class hal
     user system
-    group system
+    group system wakelock
     priority -20
     shutdown critical
