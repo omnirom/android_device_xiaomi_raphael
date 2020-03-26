@@ -200,7 +200,7 @@
     <integer name="config_screenBrightnessForVrSettingDefault">7</integer>
     <integer name="config_screenBrightnessForVrSettingMinimum">6</integer>
     <integer name="config_screenBrightnessForVrSettingMaximum">7</integer>
-    
+
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
@@ -821,7 +821,7 @@
     <bool name="config_useDevInputEventForAudioJack">true</bool>
 
     <!-- Enable overlay for all location components. -->
-    <bool name="config_enableNetworkLocationOverlay" translatable="false">false</bool>
+    <bool name="config_enableNetworkLocationOverlay" translatable="false">true</bool>
     <bool name="config_enableFusedLocationOverlay" translatable="false">false</bool>
 
     <!-- Enable overlay for all location components. -->
