@@ -3,3 +3,5 @@ type hal_motor_default, domain, halserverdomain;
 allow hal_motor_default system_app:binder call;
 #allow hal_motor_default exported2_default_prop:file read;
 get_prop(hal_motor_default, exported2_default_prop)
+
+allow hal_motor_default persist_camera_prop:file { read open getattr map };
