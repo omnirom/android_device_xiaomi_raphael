@@ -48,4 +48,4 @@ OMNI_PRIVATE_BUILD_DESC := "'raphael-user 10 QKQ1.190825.002 V11.0.5.0.QFKEUXM r
 PLATFORM_SECURITY_PATCH_OVERRIDE := 2020-01-01
 
 # Inherit from custom vendor
-#$(call inherit-product, vendor/MiuiCamera/config.mk)
+$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
