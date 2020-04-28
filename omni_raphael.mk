@@ -13,7 +13,8 @@
 # limitations under the License.
 
 VENDOR_EXCEPTION_PATHS += omni \
-    xiaomi
+    xiaomi \
+    MiuiCamera
 
 VENDOR_EXCEPTION_MODULES += FM2 \
     qcom.fmradio \
