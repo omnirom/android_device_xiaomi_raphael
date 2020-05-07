@@ -443,10 +443,6 @@
     <!-- Show a custom view for FOD -->
     <bool name="config_usesFOD">true</bool>
 
-    <!-- True if the display hardware only has brightness buckets rather than a full range of
-         backlight values -->
-    <bool name="config_displayBrightnessBucketsInDoze">true</bool>
-
     <!-- Power Management: Specifies whether to decouple the interactive state of the
          device from the display on/off state.
          When false, setInteractive(..., true) will be called before the display is turned on
