@@ -110,6 +110,7 @@ void vendor_load_properties() {
     property_override("persist.vendor.qcom.bluetooth.enable.splita2dp", "false");
     property_override("vendor.audio.feature.a2dp_offload.enable", "false");
     property_override("ro.oem_unlock_supported", "0");
+    property_override("debug.stagefright.omx_default_rank.sw-audio", "16");
 
     load_dalvikvm_properties();
 
