@@ -1,0 +1,11 @@
+-keep class org.omnirom.xiaomiparts.dirac.* {
+  *;
+}
+
+-keep class org.omnirom.xiaomiparts.doze.* {
+  *;
+}
+
+-keep class org.omnirom.xiaomiparts.popupcamera.* {
+  *;
+}

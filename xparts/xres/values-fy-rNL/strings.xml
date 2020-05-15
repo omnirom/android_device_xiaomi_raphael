@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2016 The CyanogenMod Project
+               (C) 2017 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="ambient_display_gestures_title">Omjouwingsdisplay gebearen</string>
+    <string name="ambient_display_gestures_summary">Ekstra gebearen om it skerm oan te setten</string>
+    <string name="ambient_display_always_on_title">Altyd oan</string>
+    <string name="ambient_display_always_on_summary">Tiid, meldingspiktogrammen en oare ynformaasje werjaan. Heger batterijferbrûk.</string>
+    <string name="pickup_sensor_title">Bewegingssensor</string>
+    <string name="high_touch_sensitivity_title">Hege gefoelichheid oanreitsjen</string>
+    <string name="high_touch_sensitivity_summary">Gefoelichheid fan it skerm ferheegje, sadat it betsjinne wurde kin mei wanten</string>
+    <string name="quick_charge_title">Fluchlade</string>
+    <string name="quick_charge_summary">Fluchlade yn-/útskeakelje en de lader opnij keppelje nei it wizigjen fan dizze ynstelling</string>
+    <string name="camera_focus_fix_title">Kamerafokus fix</string>
+    <string name="camera_focus_fix_summary">Ynskeakelje as jo problemen hawwe mei it skerpstellen fan de kamera</string>
+</resources>
