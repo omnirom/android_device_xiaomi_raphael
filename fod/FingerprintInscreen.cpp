@@ -34,7 +34,7 @@
 #define FOD_SENSOR_Y 1931
 #define FOD_SENSOR_SIZE 190
 
-#define BRIGHTNESS_PATH "/sys/class/backlight/panel0-backlight/brightness_clone"
+//#define BRIGHTNESS_PATH "/sys/class/backlight/panel0-backlight/brightness_clone"
 #define DOZE_BRIGHTNESS_PATH "/sys/class/drm/card0-DSI-1/doze_brightness"
 
 namespace vendor {
@@ -42,7 +42,7 @@ namespace omni {
 namespace biometrics {
 namespace fingerprint {
 namespace inscreen {
-namespace V1_0 {
+namespace V1_1 {
 namespace implementation {
 
 template <typename T>
@@ -85,18 +85,22 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
     return Void();
 }
 
-Return<void> FingerprintInscreen::onPress() {
-    xiaomiDisplayFeatureService->setFeature(0, 11, 1, 4);
-    xiaomiDisplayFeatureService->setFeature(0, 11, 1, 3);
-    xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_630_FOD);
+Return<void> FingerprintInscreen::switchHbm(bool enabled) {
+    if (enabled) {
+        xiaomiDisplayFeatureService->setFeature(0, 11, 1, 3);
+    } else {
+        xiaomiDisplayFeatureService->setFeature(0, 11, 0, 3);
+    }
+    return Void();
+}
 
+Return<void> FingerprintInscreen::onPress() {
+    xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_630_FOD);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
-    xiaomiDisplayFeatureService->setFeature(0, 11, 0, 3);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
-
     return Void();
 }
 
@@ -129,9 +133,9 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
     return Void();
 }
 
-Return<int32_t> FingerprintInscreen::getDimAmount(int32_t) {
+Return<int32_t> FingerprintInscreen::getDimAmount(int32_t brightness) {
     float alpha;
-    int realBrightness = get(BRIGHTNESS_PATH, 0);
+    int realBrightness = brighness * 2047 / 255;
 
     if (realBrightness > 500) {
         alpha = 1.0 - pow(realBrightness / 2047.0 * 430.0 / 600.0, 0.455);
@@ -151,7 +155,7 @@ Return<void> FingerprintInscreen::setCallback(const sp<IFingerprintInscreenCallb
 }
 
 }  // namespace implementation
-}  // namespace V1_0
+}  // namespace V1_1
 }  // namespace inscreen
 }  // namespace fingerprint
 }  // namespace biometrics
