@@ -65,7 +65,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/android.hardware.fod.xml:system/etc/permissions/android.hardware.fod.xml
 PRODUCT_PACKAGES += \
-    omni.biometrics.fingerprint.inscreen@1.0-service.raphael
+    omni.biometrics.fingerprint.inscreen@1.1-service.raphael
 
 # FM
 PRODUCT_PACKAGES += \
