@@ -1,0 +1,7 @@
+service fingerprint-inscreen-1-1 /system/bin/hw/omni.biometrics.fingerprint.inscreen@1.1-service.raphael
+    interface vendor.omni.biometrics.fingerprint.inscreen@1.1::IFingerprintInscreen default
+    class hal
+    user system
+    group system
+    priority -20
+    shutdown critical
