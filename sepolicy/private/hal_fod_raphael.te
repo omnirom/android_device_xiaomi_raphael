@@ -28,3 +28,5 @@ allow hal_fod_raphael sysfs_tp_fodstatus:file { getattr open write };
 allow hal_fod_raphael sysfs:file {getattr};
 
 allow hal_fod_raphael omni_sysfs_drm:file rw_file_perms;
+
+wakelock_use(hal_fod_raphael)
