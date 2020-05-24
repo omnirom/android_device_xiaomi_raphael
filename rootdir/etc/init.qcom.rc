@@ -1,6 +1,9 @@
 on init
     mount none /system/overlay/EmptyOverlay/EmptyOverlay.apk /vendor/overlay/CarrierConfigResCommon.apk bind
 
+on post-fs-data
+    write /sys/class/drm/card0-DSI-1/dim_layer_enable 1
+
 service vendor.capabilityconfigstore /vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
     override
     class hal
