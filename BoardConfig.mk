@@ -158,6 +158,9 @@ PRODUCT_SEPOLICY_SPLIT := true
 
 # Sepolicy
 include vendor/omni/sepolicy/sepolicy.mk
+
+SELINUX_IGNORE_NEVERALLOWS := true
+
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     $(DEVICE_PATH)/sepolicy/private \
     device/qcom/sepolicy/generic/private \

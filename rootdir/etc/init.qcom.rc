@@ -1,6 +1,12 @@
 on init
     mount none /system/overlay/EmptyOverlay/EmptyOverlay.apk /vendor/overlay/CarrierConfigResCommon.apk bind
 
+on post-fs-data
+    chown system system /sys/class/drm/card0-DSI-1/dim_alpha
+    chown system system /sys/class/drm/card0-DSI-1/fod_ui_ready
+    chown system system /sys/class/drm/card0-DSI-1/dim_layer_enable
+    write /sys/class/drm/card0-DSI-1/dim_layer_enable 1
+
 on boot
     write /sys/class/thermal/thermal_message/sconfig 10
 
