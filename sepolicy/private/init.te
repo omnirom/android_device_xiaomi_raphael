@@ -11,3 +11,5 @@ allow init vendor_overlay_file:file mounton;
 allow init vendor_overlay_file:dir mounton;
 
 allow init debugfs:dir mounton;
+
+allow init {sysfs_graphics sysfs}:file {w_file_perms setattr};
