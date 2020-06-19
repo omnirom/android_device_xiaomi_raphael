@@ -1,5 +1,5 @@
 allow system_app sysfs_kgsl_gpu_model:file getattr;
-allow system_app sysfs_kgsl:file getattr;
+allow system_app sysfs_kgsl:file r_file_perms;
 
 allow system_app hal_motor_default:binder transfer;
 allow system_app hal_motor_default:binder call;
