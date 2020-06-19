@@ -75,6 +75,10 @@
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
+    <!-- Does the battery LED support multiple colors?
+         Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">false</bool>
+
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening
          it causes the device to wake up.
          The default is false. -->
@@ -448,4 +452,14 @@
     <!-- enable doze powersaving mode -->
     <bool name="config_enableAutoPowerModes">true</bool>
 
+    <!-- Max number of advertisers supported by bluetooth controller. 0 if the
+         device does not support multiple advertisement-->
+    <integer translatable="false" name="config_bluetooth_max_advertisers">4</integer>
+
+    <!-- Max number of scan filters supported by blutooth controller. 0 if the
+         device does not support hardware scan filters-->
+    <integer translatable="false" name="config_bluetooth_max_scan_filters">1</integer>
+
+    <!-- Boolean indicating whether 802.11r Fast BSS Transition is enabled on this platform -->
+    <bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool>
 </resources>
