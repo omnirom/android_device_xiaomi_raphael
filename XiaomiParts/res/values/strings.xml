@@ -16,45 +16,45 @@
 -->
 <resources>
     <!-- DC Dimming settings -->
-    <string name="dc_dimming_enable_title">Anti-Flicker Mode</string>
-    <string name="dc_dimming_enable_summary">DC Dimming reduces eye strain in low light conditions</string>
+    <string name="dc_dimming_enable_title">DC dimming</string>
+    <string name="dc_dimming_enable_summary">Reduces eye strain in low light conditions</string>
 
     <!-- DC Dimming tile -->
-    <string name="dc_dimming_tile_title">DC Dimming</string>
+    <string name="dc_dimming_tile_title">DC dimming</string>
 
     <!-- Dirac settings -->
-    <string name="dirac_title">Dirac sound enhancer</string>
+    <string name="dirac_title">Dirac audio enhancer</string>
     <string name="dirac_headset_title">Headset type</string>
-    <string name="dirac_hifi_enable_title"> Enable Hi-fi</string>
-    <string name="dirac_preset_title">Sound preset</string>
+    <string name="dirac_preset_title">Equalizer preset</string>
 
     <!-- Dirac settings: Hi-Fi -->
     <string name="dirac_hifi_title">Hi-Fi</string>
-    <string name="dirac_hifi_summary">Decrease noise and Distortion and increase audio quality</string>
+    <string name="dirac_hifi_enable_title">Hi-Fi audio</string>
+    <string name="dirac_hifi_summary">Decrease noise, distortion and increase quality</string>
 
     <!-- Dirac settings: headset profiles -->
     <string name="dirac_headset_default">Default</string>
-    <string name="dirac_headset_earbuds">Mi Earbuds</string>
-    <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
-    <string name="dirac_headset_piston_1">Mi Piston 1</string>
-    <string name="dirac_headset_general">General Earbuds</string>
-    <string name="dirac_headset_general_inear">General In-Ear</string>
-    <string name="dirac_headset_piston_basic">Basic Edition</string>
-    <string name="dirac_headset_piston_2">Mi Piston 2</string>
-    <string name="dirac_headset_piston_standard">Mi Piston 3</string>
-    <string name="dirac_headset_headphone">Mi Headphone</string>
-    <string name="dirac_headset_piston_youth">Youth Edition</string>
-    <string name="dirac_headset_piston_color">Color Edition</string>
-    <string name="dirac_headset_in_ear">Mi In-Ear</string>
-    <string name="dirac_headset_capsule">Mi Capsule</string>
-    <string name="dirac_headset_in_ear_pro">Mi In-Ear Pro</string>
-    <string name="dirac_headset_comfort">Mi Comfort</string>
-    <string name="dirac_headset_reduction_noise">Mi Noise Cancelling (Type-C)</string>
-    <string name="dirac_headset_cancelling">Mi Noise Cancelling (3.5mm)</string>
-    <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
-    <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
-    <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
-    <string name="dirac_headset_earphone">Mi Earphones</string>
+    <string name="dirac_headset_earbuds">Mi earbuds</string>
+    <string name="dirac_headset_in_ear_2013">Mi in-ear (2013)</string>
+    <string name="dirac_headset_piston_1">Mi piston 1</string>
+    <string name="dirac_headset_general">General earbuds</string>
+    <string name="dirac_headset_general_inear">General in-ear</string>
+    <string name="dirac_headset_piston_basic">Basic edition</string>
+    <string name="dirac_headset_piston_2">Mi piston 2</string>
+    <string name="dirac_headset_piston_standard">Mi piston 3</string>
+    <string name="dirac_headset_headphone">Mi headphone</string>
+    <string name="dirac_headset_piston_youth">Youth edition</string>
+    <string name="dirac_headset_piston_color">Color edition</string>
+    <string name="dirac_headset_in_ear">Mi in-ear</string>
+    <string name="dirac_headset_capsule">Mi capsule</string>
+    <string name="dirac_headset_in_ear_pro">Mi in-ear pro</string>
+    <string name="dirac_headset_comfort">Mi comfort</string>
+    <string name="dirac_headset_reduction_noise">Mi noise cancelling (Type-C)</string>
+    <string name="dirac_headset_cancelling">Mi noise cancelling (3.5mm)</string>
+    <string name="dirac_headset_half_in_ear">Mi half in-ear</string>
+    <string name="dirac_headset_in_ear2">Mi in-ear 2</string>
+    <string name="dirac_headset_earphone_basic">Mi earphones basic</string>
+    <string name="dirac_headset_earphone">Mi earphones</string>
 
     <!-- Dirac settings: presets -->
     <string name="dirac_preset_default">Default</string>
@@ -69,10 +69,15 @@
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
 
+    <!-- Doze settings -->
+    <string name="doze_sense_title">Advanced doze</string>
+    <string name="doze_sense_summary">Wake display when you receive notifications or trigger sensor</string>
+
     <!-- Popup camera settings -->
-    <string name="popup_led_title">Camera LED</string>
-    <string name="popup_led_summary">Show LED light when the front camera appears and retracts</string>
-    <string name="popup_title">Front camera sound effects</string>
+    <string name="popup_title">Front camera effects</string>
+    <string name="popup_led_title">Light effect</string>
+    <string name="popup_led_summary">Turn on LED when front camera extends or retracts</string>
+    <string name="popup_sound_title">Sound effect</string>
     <string name="popup_title_muqin">Xylophone</string>
     <string name="popup_title_yingyan">Condor</string>
     <string name="popup_title_mofa">Magic</string>
@@ -82,7 +87,7 @@
 
 
     <!-- Thermal Profiles -->
-    <string name="thermal_title">Thermal Profiles</string>
+    <string name="thermal_title">Thermal profiles</string>
     <string name="thermal_summary">Adjust per-app thermal profiles for optimum performance</string>
     <string name="thermal_default">Default</string>
     <string name="thermal_benchmark">Benchmark</string>
