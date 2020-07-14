@@ -92,7 +92,7 @@ void vendor_load_properties() {
     property_override("ro.product.device", "raphael");
     property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.bootimage.build.fingerprint",
         "ro.product.build.fingerprint", "ro.vendor.build.fingerprint", "ro.odm.build.fingerprint",
-        "Xiaomi/raphael/raphael:10/QKQ1.190825.002/V12.0.0.8.QFKMIXM:user/release-keys");
+        "Xiaomi/raphael_eea/raphael:10/QKQ1.190825.002/V12.0.1.0.QFKEUXM:user/release-keys");
 
     if (region.find("CN") != std::string::npos) {
         load_raphael();
