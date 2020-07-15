@@ -138,7 +138,9 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    vendor/nxp/opensource/sn100x
+    vendor/nxp/opensource/sn100x \
+    frameworks/av/camera/cameraserver \
+    frameworks/av/services/camera/libcameraservice
 
 # Telephony
 PRODUCT_PACKAGES += \
