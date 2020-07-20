@@ -9,3 +9,7 @@
 -keep class org.omnirom.xiaomiparts.popupcamera.* {
   *;
 }
+
+-keep class org.omnirom.xiaomiparts.KeyHandler {
+  *;
+}
