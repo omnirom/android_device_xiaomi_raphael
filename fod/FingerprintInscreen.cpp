@@ -85,22 +85,26 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 }
 
 Return<void> FingerprintInscreen::onPress() {
+    LOG(ERROR) << "onPress() called";
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_630_FOD);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
+    LOG(ERROR) << "onRelease() called";
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
+    LOG(ERROR) << "onShowFODView() called";
     set(FOD_STATUS_PATH, FOD_STATUS_ON);
     xiaomiDisplayFeatureService->setFeature(0, 17, 1, 1);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
+    LOG(ERROR) << "onHideFODView() called";
     set(FOD_STATUS_PATH, FOD_STATUS_OFF);
     xiaomiDisplayFeatureService->setFeature(0, 17, 0, 1);
     return Void();
