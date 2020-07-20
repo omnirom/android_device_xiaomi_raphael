@@ -282,7 +282,7 @@
     <integer name="config_screenBrightnessForVrSettingDefault">7</integer>
     <integer name="config_screenBrightnessForVrSettingMinimum">6</integer>
     <integer name="config_screenBrightnessForVrSettingMaximum">7</integer>
-    
+
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
@@ -462,4 +462,12 @@
 
     <!-- Boolean indicating whether 802.11r Fast BSS Transition is enabled on this platform -->
     <bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool>
+
+    <!-- The list absolute paths of jar/apk files containing the device specific handlers,
+    delimited by File.pathSeparator, which defaults to ":" on Android  -->
+    <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/XiaomiParts/XiaomiParts.apk</string>
+    <!-- Full qualified name of the class that implements
+    com.android.internal.os.DeviceKeyHandler interface. -->
+    <string name="config_deviceKeyHandlerClass" translatable="false">org.omnirom.xiaomiparts.KeyHandler</string>
+
 </resources>
