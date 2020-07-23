@@ -53,12 +53,10 @@ PRODUCT_NAME := omni_raphael
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-VENDOR_RELEASE := 10/QKQ1.190825.002/V12.0.0.8.QFKMIXM:user/release-keys
+VENDOR_RELEASE := 10/QKQ1.190825.002/V12.0.1.0.QFKMIXM:user/release-keys
 BUILD_FINGERPRINT := Xiaomi/raphael/raphael:$(VENDOR_RELEASE)
 OMNI_BUILD_FINGERPRINT := Xiaomi/raphael/raphael:$(VENDOR_RELEASE)
-OMNI_PRIVATE_BUILD_DESC := "'raphael-user 10 QKQ1.190825.002 V12.0.0.8.QFKMIXM release-keys'"
-
-PLATFORM_SECURITY_PATCH_OVERRIDE := 2020-05-01
+OMNI_PRIVATE_BUILD_DESC := "'raphael-user 10 QKQ1.190825.002 V12.0.1.0.QFKMIXM release-keys'"
 
 # Inherit from custom vendor
 #$(call inherit-product, vendor/MiuiCamera/config.mk)
