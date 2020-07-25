@@ -156,8 +156,8 @@ product/framework/QtiTelephonyServicelibrary.jar
 product/framework/qcrilhook.jar
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
-# Telephony (qti-telephony-common) - from DRG - QKQ1.190828.002
-product/framework/qti-telephony-common.jar|74adbf98e89531ac385ab5c4cea3c2549a0d24b0
+# Telephony (qti-telephony-common) - from PL2 QKQ1.190828.002
+product/framework/qti-telephony-common.jar|FABEBA9162FD802A1BA048DDBB5B3B2D23545183
 
 # Soter
 -app/SoterService/SoterService.apk
