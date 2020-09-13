@@ -25,7 +25,7 @@ cc_binary {
         "libhidlbase",
 //        "libhidltransport",
         "liblog",
-        "libhwbinder",
+//        "libhwbinder",
         "libutils",
         "vendor.omni.biometrics.fingerprint.inscreen@1.0",
         "vendor.xiaomi.hardware.displayfeature@1.0",
