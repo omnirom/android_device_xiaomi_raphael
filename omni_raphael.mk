@@ -41,7 +41,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit aosp mainline system configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/mainline_system_arm64.mk)
+# $(call inherit-product, $(SRC_TARGET_DIR)/product/mainline_system_arm64.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 28
 
