@@ -20,12 +20,10 @@
 #include <sys/_system_properties.h>
 #include <sys/sysinfo.h>
 
-#include "property_service.h"
-
 namespace android {
 namespace init {
 
-using android::init::property_set;
+using ::android::base::SetProperty;
 
 void property_override(char const prop[], char const value[])
 {
