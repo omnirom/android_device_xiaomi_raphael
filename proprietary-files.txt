@@ -113,8 +113,8 @@ product/lib64/vendor.qti.imsrtpservice@2.1.so
 etc/excluded-input-devices.xml
 
 # HotwordEnrollment
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;
 
 # Perf
 product/lib64/vendor.qti.hardware.iop@2.0.so
