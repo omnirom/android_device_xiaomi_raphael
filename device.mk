@@ -162,6 +162,8 @@ PRODUCT_PACKAGES += \
     qti-telephony-utils \
     qti_telephony_utils.xml
 
+PRODUCT_BOOT_JARS += android.hidl.manager-V1.0-java
+
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
