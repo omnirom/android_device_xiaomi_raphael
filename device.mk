@@ -170,6 +170,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     WifiOverlay
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vintf/manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/vintf/manifest.xml
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
