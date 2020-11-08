@@ -139,9 +139,6 @@ product/media/audio/ui/popup_yingyan_up.ogg
 # OMX
 lib/libstagefright_softomx.so
 
-# Power-off charging daemon
-bin/charger
-
 # RIL
 etc/permissions/privapp-permissions-qti.xml
 etc/permissions/qti_libpermissions.xml|593BCB72CCE68CEB0A70F50BCAE7D460114E7C62
