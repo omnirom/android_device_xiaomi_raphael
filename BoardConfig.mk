@@ -150,9 +150,6 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
-# RIL
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-
 # Split selinux policy
 PRODUCT_SEPOLICY_SPLIT := true
 
