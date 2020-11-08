@@ -1,5 +1,6 @@
 on init
     mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/CarrierConfigResCommon.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/TelephonyResCommon.apk bind
 
 on post-fs-data
     write /sys/class/drm/card0-DSI-1/dim_layer_enable 1
