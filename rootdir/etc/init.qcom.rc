@@ -1,5 +1,10 @@
 on init
     mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/CarrierConfigResCommon.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/CellBroadcastReceiverResCommon.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/DevicesAndroidOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/DevicesOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/DocumentsUIOverlay/DocumentsUIOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/MiuiBluetoothOverlay.apk bind
     mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/TelephonyResCommon.apk bind
 
 on post-fs-data
