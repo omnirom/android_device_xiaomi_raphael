@@ -10,5 +10,17 @@
     "repository": "android_kernel_xiaomi_raphael",
     "target_path": "kernel/xiaomi/raphael",
     "revision": "android-11"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_vendor_qcom_opensource_packages_apps_Bluetooth",
+    "target_path": "vendor/qcom/opensource/commonsys/packages/apps/Bluetooth",
+    "revision": "android-11"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_vendor_qcom_opensource_bluetooth-commonsys-intf",
+    "target_path": "vendor/qcom/opensource/commonsys-intf/bluetooth",
+    "revision": "android-11"
   }
 ]
