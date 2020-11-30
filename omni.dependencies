@@ -7,8 +7,8 @@
   },
   {
     "remote": "omnirom",
-    "repository": "android_vendor_qcom_opensource_fm-commonsys",
-    "target_path": "vendor/qcom/opensource/fm-commonsys",
-    "revision": "android-10"
+    "repository": "android_kernel_xiaomi_raphael",
+    "target_path": "kernel/xiaomi/raphael",
+    "revision": "android-11"
   }
 ]
