@@ -10,6 +10,8 @@ BUILD_BROKEN_DUP_RULES := true
 
 DEVICE_PATH := device/xiaomi/raphael
 
+PRODUCT_SOONG_NAMESPACES += packages/apps/Bluetooth
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
