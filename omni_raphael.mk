@@ -20,8 +20,6 @@ VENDOR_EXCEPTION_MODULES += FM2 \
     libqcomfm_jni \
     libqcomfm_jni_32
 
-PRODUCT_ADB_KEYS := device/xiaomi/raphael/adbkey.pub
-
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
