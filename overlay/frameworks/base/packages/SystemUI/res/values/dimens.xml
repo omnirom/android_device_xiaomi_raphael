@@ -18,4 +18,7 @@
 <resources>
     <dimen name="rounded_corner_content_padding">12dp</dimen>
     <dimen name="keyguard_indication_margin_bottom">160dp</dimen>
+
+    <!-- 12dp -->
+    <dimen name="cpu_info_text_height">14dp</dimen>
 </resources>
